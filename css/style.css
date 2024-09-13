@@ -253,11 +253,11 @@ section {
     }
 
     .timeline-item:nth-child(even) {
-        right: 15px;
+        left: 0;
     }
 
     .timeline-item:nth-child(even)::after {
-        right: 50px;
+        right: 100px;
     }
 }
 
