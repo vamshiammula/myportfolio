@@ -253,7 +253,7 @@ section {
     }
 
     .timeline-item:nth-child(even) {
-        left: 0;
+        right: 15px;
     }
 
     .timeline-item:nth-child(even)::after {
