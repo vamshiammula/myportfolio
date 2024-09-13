@@ -170,6 +170,9 @@ section {
 }
 
 /* Experience Section */
+/* Existing timeline styles */
+
+/* Timeline for desktop screens */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -212,10 +215,9 @@ section {
 }
 
 .timeline-item:nth-child(even)::after {
-    left: 0%; /* Centers the circle */
-    transform: translateX(-50%); /* Ensures the circle is on the line */
+    left: 0%;
+    transform: translateX(-50%);
 }
-
 
 .timeline-item:nth-child(odd) {
     left: 0;
@@ -233,6 +235,32 @@ section {
     font-style: italic;
     color: var(--secondary-color);
 }
+
+/* Responsive Timeline for Mobile Screens */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 15px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 15px;
+    }
+}
+
 
 /* Projects Section */
 .project-grid {
