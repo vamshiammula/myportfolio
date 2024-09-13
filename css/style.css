@@ -257,7 +257,7 @@ section {
     }
 
     .timeline-item:nth-child(even)::after {
-        right: 25px;
+        right: 50px;
     }
 }
 
